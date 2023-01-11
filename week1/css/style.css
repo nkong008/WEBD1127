@@ -28,4 +28,15 @@
   stroke: white;
   stroke-width: 50px;
   fill: red;
+}
+#container section svg rect#rect {
+  stroke: white;
+  stroke-width: 50px;
+  fill: red;
+}
+#container section svg .st0 {
+  fill: #ED1C24;
+  stroke: #FFFFFF;
+  stroke-width: 50;
+  stroke-miterlimit: 10;
 }/*# sourceMappingURL=style.css.map */

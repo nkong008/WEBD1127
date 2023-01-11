@@ -26,6 +26,19 @@ section {
             stroke-width: 50px;
             fill: red;
         }
+        rect#rect {
+            stroke: white;
+            stroke-width: 50px;
+            fill: red;
+            // width: 500px;
+            // height: 50px;
+        }
+        .st0 {
+            fill: #ED1C24;
+            stroke: #FFFFFF;
+            stroke-width: 50;
+            stroke-miterlimit: 10;
+        }
     }
 }
 }
