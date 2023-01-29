@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480.05 349.99">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #231f20;
+        stroke-miterlimit: 10;
+        stroke-width: 8px;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1" data-name="Layer 1">
+    <polyline class="cls-1" points="4 327.95 324.19 327.95 258.12 141.59 193.74 261.03 82.78 14.53 49.74 270.35 4 227.15 4 318.63 15.86 272.89 35.34 292.37 36.19 278.82 73.46 310.16 87.86 152.6 103.11 189.03 111.58 148.37 182.73 287.29 197.98 294.06 237.79 218.68 243.72 261.87 253.88 189.88 305.55 322.86"/>
+  </g>
+  <g id="Layer_2" data-name="Layer 2">
+    <ellipse class="cls-1" cx="190.49" cy="88.42" rx="26.4" ry="23.06"/>
+  </g>
+</svg>

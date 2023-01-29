@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600&display=swap");
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+@font-face {
+  font-family: bro-link;
+  src: url("../fonts/BrolinkDEMO.otf");
+}
+#container {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+}
+#container header,
+#container footer {
+  background-color: black;
+  height: 70px;
+  width: 100%;
+  color: white;
+}
+#container header {
+  display: flex;
+  align-items: center;
+}
+#container header span {
+  display: inline-block;
+  font-family: bro-link;
+  margin-left: 10em;
+}
+#container ul {
+  float: right;
+  margin-top: 1em;
+  margin-left: 30em;
+}
+#container ul li {
+  display: inline-block;
+  padding: 1em 0.45em;
+  cursor: pointer;
+  border-radius: 40px;
+  transition: all 200ms linear;
+}
+#container ul li a {
+  text-decoration: none;
+  color: white;
+  transition: all 100ms linear;
+}
+#container ul li:hover a {
+  color: green;
+}
+#container footer {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#container section {
+  height: calc(100% - 140px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#container section svg {
+  margin: top 35px;
+  height: 70%;
+  cursor: pointer;
+}
+#container section svg .blackLine {
+  stroke: #231f20;
+  stroke-dasharray: 12019;
+  stroke-dashoffset: 12019;
+}
+#container section svg .blackLine,
+#container section svg .greyLine {
+  fill: none;
+  stroke-miterlimit: 10;
+  stroke-width: 4px;
+}
+#container section svg .greyLine {
+  stroke: #bcbec0;
+}
+#container section svg:hover .blackLine {
+  stroke-dashoffset: 0;
+  transition: 7s all linear;
+}/*# sourceMappingURL=style.css.map */
