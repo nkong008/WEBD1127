@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600&display=swap");
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+@font-face {
+    font-family: pirulen;
+    src: url(../fonts/pirulen_rg.ttf);
+}
+
+div#container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #abd3ca;
+
+  svg {
+    width: 50%;
+    .letter {
+        stroke-width: 7px;
+      }
+
+      .letter, .circle {
+        fill: none;
+        stroke: #942240;
+        //rounded out my letter
+        stroke-linejoin: round;
+        stroke-dasharray: 800;
+        stroke-dashoffset: 800;
+        animation: 8s letterAnimate forwards;
+        // animation-timing-function:cubic-bezier(0.25, 0.46, 0.45, 0.94)
+      }
+
+      .circle {
+        stroke-miterlimit: 10;
+        stroke-width: 10px;
+        stroke-dasharray: 1347;
+        stroke-dashoffset: 1347;
+        animation: 4s circleAnimate forwards;
+        animation-delay: 2s;
+      }
+    }
+    @keyframes circleAnimate {
+        from {
+            stroke-dashoffset: 1347;
+        }
+        to {
+            stroke-dashoffset: 0;
+        }
+    }
+
+    @keyframes letterAnimate {
+        from {
+            stroke-dashoffset: 800;
+        }
+        to {
+            stroke-dashoffset: 0;
+        }
+        
+    }
+}
