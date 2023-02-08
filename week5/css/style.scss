@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600&display=swap");
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+$vivaMagentaFull: #be3455;
+$vivaMagentaLight: #c6a3af;
+
+#container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(
+    225deg,
+    $vivaMagentaFull,
+    $vivaMagentaLight
+  );
+
+  svg {
+    height: 100%;
+    // width: 40%;
+    .letter {
+      stroke-width: 7px;
+    }
+
+    .letter,
+    .circle {
+      fill: none;
+      stroke: #ffffff;
+      //rounded out my letter
+      stroke-linejoin: round;
+    //   stroke-dasharray: 800;
+    //   stroke-dashoffset: 800;
+    //   animation: 8s letterAnimate forwards;
+      // animation-timing-function:cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    }
+
+    .circle {
+      stroke-miterlimit: 10;
+      stroke-width: 10px;
+    //   stroke-dasharray: 1347;
+    //   stroke-dashoffset: 1347;
+    //   animation: 4s circleAnimate forwards;
+    //   animation-delay: 2s;
+    }
+  }
+//   @keyframes circleAnimate {
+//     from {
+//       stroke-dashoffset: 1347;
+//     }
+//     to {
+//       stroke-dashoffset: 0;
+//     }
+//   }
+
+//   @keyframes letterAnimate {
+//     from {
+//       stroke-dashoffset: 800;
+//     }
+//     to {
+//       stroke-dashoffset: 0;
+//     }
+
+    svg#spirograph {
+        height: 100%;
+        .cls-1 {
+            fill: #fcee21;
+          }
+    
+          .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9, .cls-10, .cls-11, .cls-12, .cls-13, .cls-14, .cls-15, .cls-16, .cls-17, .cls-18, .cls-19, .cls-20, .cls-21, .cls-22, .cls-23 {
+            mix-blend-mode: multiply;
+            opacity: .25;
+          }
+    
+          .cls-2 {
+            fill: #fbb03b;
+          }
+    
+          .cls-3 {
+            fill: #ed1c24;
+          }
+    
+          .cls-4 {
+            fill: #ff0;
+          }
+    
+          .cls-5 {
+            fill: #ed1e79;
+          }
+    
+          .cls-6 {
+            fill: #f15a24;
+          }
+    
+          .cls-7 {
+            fill: #f7931e;
+          }
+    
+          .cls-8 {
+            fill: #8cc63f;
+          }
+    
+          .cls-9 {
+            fill: #93278f;
+          }
+    
+          .cls-10 {
+            fill: #9e005d;
+          }
+    
+          .cls-11 {
+            fill: #662d91;
+          }
+    
+          .cls-12 {
+            fill: #c1272d;
+          }
+    
+          .cls-13 {
+            fill: #d4145a;
+          }
+    
+          .cls-14 {
+            fill: #00a99d;
+          }
+    
+          .cls-15 {
+            fill: #009245;
+          }
+    
+          .cls-16 {
+            fill: #006837;
+          }
+    
+          .cls-17 {
+            fill: #0071bc;
+          }
+    
+          .cls-18 {
+            fill: #2e3192;
+          }
+    
+          .cls-19 {
+            fill: #39b54a;
+          }
+    
+          .cls-20 {
+            fill: #29abe2;
+          }
+    
+          .cls-21 {
+            fill: #22b573;
+          }
+    
+          .cls-22 {
+            fill: #1b1464;
+          }
+    
+          .cls-23 {
+            fill: #d9e021;
+          }
+    
+          .cls-24 {
+            isolation: isolate;
+          }
+    }
+  }
+

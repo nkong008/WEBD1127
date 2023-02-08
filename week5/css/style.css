@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600&display=swap");
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+#container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(225deg, #be3455, #c6a3af);
+}
+#container svg {
+  height: 100%;
+}
+#container svg .letter {
+  stroke-width: 7px;
+}
+#container svg .letter,
+#container svg .circle {
+  fill: none;
+  stroke: #ffffff;
+  stroke-linejoin: round;
+}
+#container svg .circle {
+  stroke-miterlimit: 10;
+  stroke-width: 10px;
+}
+#container svg#spirograph {
+  height: 100%;
+}
+#container svg#spirograph .cls-1 {
+  fill: #fcee21;
+}
+#container svg#spirograph .cls-1, #container svg#spirograph .cls-2, #container svg#spirograph .cls-3, #container svg#spirograph .cls-4, #container svg#spirograph .cls-5, #container svg#spirograph .cls-6, #container svg#spirograph .cls-7, #container svg#spirograph .cls-8, #container svg#spirograph .cls-9, #container svg#spirograph .cls-10, #container svg#spirograph .cls-11, #container svg#spirograph .cls-12, #container svg#spirograph .cls-13, #container svg#spirograph .cls-14, #container svg#spirograph .cls-15, #container svg#spirograph .cls-16, #container svg#spirograph .cls-17, #container svg#spirograph .cls-18, #container svg#spirograph .cls-19, #container svg#spirograph .cls-20, #container svg#spirograph .cls-21, #container svg#spirograph .cls-22, #container svg#spirograph .cls-23 {
+  mix-blend-mode: multiply;
+  opacity: 0.25;
+}
+#container svg#spirograph .cls-2 {
+  fill: #fbb03b;
+}
+#container svg#spirograph .cls-3 {
+  fill: #ed1c24;
+}
+#container svg#spirograph .cls-4 {
+  fill: #ff0;
+}
+#container svg#spirograph .cls-5 {
+  fill: #ed1e79;
+}
+#container svg#spirograph .cls-6 {
+  fill: #f15a24;
+}
+#container svg#spirograph .cls-7 {
+  fill: #f7931e;
+}
+#container svg#spirograph .cls-8 {
+  fill: #8cc63f;
+}
+#container svg#spirograph .cls-9 {
+  fill: #93278f;
+}
+#container svg#spirograph .cls-10 {
+  fill: #9e005d;
+}
+#container svg#spirograph .cls-11 {
+  fill: #662d91;
+}
+#container svg#spirograph .cls-12 {
+  fill: #c1272d;
+}
+#container svg#spirograph .cls-13 {
+  fill: #d4145a;
+}
+#container svg#spirograph .cls-14 {
+  fill: #00a99d;
+}
+#container svg#spirograph .cls-15 {
+  fill: #009245;
+}
+#container svg#spirograph .cls-16 {
+  fill: #006837;
+}
+#container svg#spirograph .cls-17 {
+  fill: #0071bc;
+}
+#container svg#spirograph .cls-18 {
+  fill: #2e3192;
+}
+#container svg#spirograph .cls-19 {
+  fill: #39b54a;
+}
+#container svg#spirograph .cls-20 {
+  fill: #29abe2;
+}
+#container svg#spirograph .cls-21 {
+  fill: #22b573;
+}
+#container svg#spirograph .cls-22 {
+  fill: #1b1464;
+}
+#container svg#spirograph .cls-23 {
+  fill: #d9e021;
+}
+#container svg#spirograph .cls-24 {
+  isolation: isolate;
+}/*# sourceMappingURL=style.css.map */
