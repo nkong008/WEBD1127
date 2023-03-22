@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+//example 1 start point
+.content {
+    width: 100vw;
+    height: 100vh;
+    background: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#svg1 {
+    background-color: grey;
+}
+
+#text1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 10px;
+    fill: #fff;
+    stroke: rgb(222, 28, 154);
+    stroke-width: 0.04em;
+    font-weight: bold;
+}
+
+#rect1 {
+    fill: blue;
+}
+
+#content2 {
+    width: 100vw;
+    height: 100vh;
+    background: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 0;
+}
+
+#svg2 {
+    background-color: #fff;
+}
+
+#rect2 {
+    fill: green;
+}
+//example 1end ////////////////////////////////
+
+// animation example start
+#rect3{
+    animation: 4s moveMask ease-in-out normal infinite ;
+}
+
+//these numbers are based off of image size and rect 
+@keyframes moveMask {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    25% {
+        transform: translate(50px, 0px);
+    }
+    50% {
+        transform: translate(50px, 50px);
+    }
+    75% {
+        transform: translate(0px, 50px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+        transform: scale(2);
+    }
+
+
+}
+//example 2 end example////////////////////////
+
+// start of example 3
+#content3 {
+    background-color: #fff;
+
+}
+
+#text2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 10px;
+    fill: #fff;
+    stroke: rgb(222, 28, 154);
+    stroke-width: 0.04em;
+    font-weight: bold;
+}
+
+#text2 {
+    animation: 4s moveBox ease-in-out normal infinite ;
+}
+@keyframes moveBox {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    100% {
+        transform: translate(0px, 50px);
+    }
+}
+
+// end of example 3//////////////////////////////
