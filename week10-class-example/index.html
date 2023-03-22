@@ -93,7 +93,7 @@
         let content = document.querySelector(".content");
         let loading = document.querySelector(".loading");
         let title = document.querySelector(".content > h1");
-        // let title1 = document.querySelector(".content > h1 > span")
+        let titleSpans = document.querySelector(".content > h1 > span")
         // let title1 = title.childNodes[0].NodeList;
 
 
@@ -111,18 +111,18 @@
                 opacity: 0
             }, {
                 opacity: 1,
-                duration: 3
+                duration: 2
             }, "+=1");
-            // tl.from(title, {y: 100, duration: 3, stagger: 1})
-            tl.from(title, {
-                y: 100,
-                opacity: 0,
-                duration: 0.25,
-            }, "+=2");
+            tl.from(titleSpans, {y: -100, x:50,  opacity: 0, duration: 0.5, stagger: 0.3, ease: "bounce.out"})
+            // tl.from(title, {
+            //     y: 100,
+            //     opacity: 0,
+            //     duration: 0.25,
+            // }, "+=2");
 
         }
         preloader();
-        console.log(title);
+        console.log(titleSpans.length);
     </script>
 
 </body>

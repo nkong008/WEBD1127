@@ -76,6 +76,9 @@
   font-size: 3em;
   letter-spacing: 0.5em;
 }
+.content h1 span {
+  display: inline-block;
+}
 
 .loading {
   opacity: 0;
