@@ -1,89 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WEBD1127 Week 10</title>
+    <title>SVG-BOX</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-   <div class="container">
-    <svg viewBox="0 0 100 100">
-        <!-- animating example svg-->
+    <div class="container loading">
+        <section id="loading">
+            <!-- view box 100 100 makes it easy to use -->
+            <svg viewBox="0 0 100 100">
 
-        <g id="demoBox-a">
-            <path class="Path_1" data-name="Path 1" d="M141.138,90.814,156.5,102.235v15.184l-15.358,11.421L125.78,117.419V102.235Z" transform="translate(-116 -83)"/>
-            <path class="Path_2" data-name="Path 2" d="M125.78,106.716l14.877,9.82v15.681l-14.877-11.15Z" transform="translate(-115.919 -86.866)" fill="#90E8C3" stroke="#fff" stroke-width="1"/>
-           <!-- properties needed to create this animation -->
-           <!-- The to and from numbers are ordered x y -->
-            <animateTransform 
-            attributeName="transform"
-            attributeType="XHL"
-            type="translate"
-            from="0 0"
-            to="50 0"
-            begin="0"
-            dur="3s"
-            repeatCount="indefinite"
-            </animateTransform>
-        </g>
+                <g id="demoBox-a">
+                    <path id="Path_1" data-name="Path 1"
+                        d="M141.138,90.814,156.5,102.235v15.184l-15.358,11.421L125.78,117.419V102.235Z"
+                        transform="translate(-116 -83)" />
+                    <path id="Path_2" data-name="Path 2" d="M125.78,106.716l14.877,9.82v15.681l-14.877-11.15Z"
+                        transform="translate(-115.919 -86.866)" />
+                    <animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 0"
+                        to="50 0" begin="0" dur="3s" repeatCount="indefinite" />
+                </g>
 
-        <!-- Changing the from state and the to -->
-        <g id="demoBox-b">
-            <path class="Path_1" data-name="Path 1" d="M141.138,90.814,156.5,102.235v15.184l-15.358,11.421L125.78,117.419V102.235Z" transform="translate(-116 -83)"/>
-            <path class="Path_2" data-name="Path 2" d="M125.78,106.716l14.877,9.82v15.681l-14.877-11.15Z" transform="translate(-115.919 -86.866)" fill="#90E8C3" stroke="#fff" stroke-width="1"/>
-           <!-- properties needed to create this animation -->
-           <!-- The to and from numbers are ordered x y -->
-            <animateTransform 
-            attributeName="transform"
-            attributeType="XHL"
-            type="translate"
-            from="50 50"
-            to="0 50"
-            begin="0"
-            dur="3s"
-            repeatCount="indefinite"
-            </animateTransform>
-        </g>
+                <g id="demoBox-b">
+                    <path id="Path_1" data-name="Path 1"
+                        d="M141.138,90.814,156.5,102.235v15.184l-15.358,11.421L125.78,117.419V102.235Z"
+                        transform="translate(-116 -83)" />
+                    <path id="Path_2" data-name="Path 2" d="M125.78,106.716l14.877,9.82v15.681l-14.877-11.15Z"
+                        transform="translate(-115.919 -86.866)" />
+                    <animateTransform attributeName="transform" attributeType="XML" type="translate" from="50 50"
+                        to="0 50" begin="0" dur="3s" repeatCount="indefinite" />
+                </g>
 
-        <!-- Changing the from state and the to -->
-        <g id="demoBox-c">
-            <path class="Path_1" data-name="Path 1" d="M141.138,90.814,156.5,102.235v15.184l-15.358,11.421L125.78,117.419V102.235Z" transform="translate(-116 -83)"/>
-            <path class="Path_2" data-name="Path 2" d="M125.78,106.716l14.877,9.82v15.681l-14.877-11.15Z" transform="translate(-115.919 -86.866)" fill="#90E8C3" stroke="#fff" stroke-width="1"/>
-           <!-- properties needed to create this animation -->
-           <!-- The to and from numbers are ordered x y -->
-            <animateTransform 
-            attributeName="transform"
-            attributeType="XHL"
-            type="translate"
-            from="0 50"
-            to="0 0"
-            begin="0"
-            dur="3s"
-            repeatCount="indefinite"
-            </animateTransform>
-        </g>
+                <g id="demoBox-c">
+                    <path id="Path_1" data-name="Path 1"
+                        d="M141.138,90.814,156.5,102.235v15.184l-15.358,11.421L125.78,117.419V102.235Z"
+                        transform="translate(-116 -83)" />
+                    <path id="Path_2" data-name="Path 2" d="M125.78,106.716l14.877,9.82v15.681l-14.877-11.15Z"
+                        transform="translate(-115.919 -86.866)" />
+                    <animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 50"
+                        to="0 0" begin="0" dur="3s" repeatCount="indefinite" />
+                </g>
 
-        <!-- Changing the from state and the to -->
-        <g id="demoBox-d">
-            <path class="Path_1" data-name="Path 1" d="M141.138,90.814,156.5,102.235v15.184l-15.358,11.421L125.78,117.419V102.235Z" transform="translate(-116 -83)"/>
-            <path class="Path_2" data-name="Path 2" d="M125.78,106.716l14.877,9.82v15.681l-14.877-11.15Z" transform="translate(-115.919 -86.866)" fill="#90E8C3" stroke="#fff" stroke-width="1"/>
-           <!-- properties needed to create this animation -->
-           <!-- The to and from numbers are ordered x y -->
-            <animateTransform 
-            attributeName="transform"
-            attributeType="XHL"
-            type="translate"
-            from="50 0"
-            to="50 50"
-            begin="0"
-            dur="3s"
-            repeatCount="indefinite"
-            </animateTransform>
-        </g>
-        <!--  End of example  ------------------------------------------------------->
-    </svg>
-   </div>
+                <g id="demoBox-d">
+                    <path id="Path_1" data-name="Path 1"
+                        d="M141.138,90.814,156.5,102.235v15.184l-15.358,11.421L125.78,117.419V102.235Z"
+                        transform="translate(-116 -83)" />
+                    <path id="Path_2" data-name="Path 2" d="M125.78,106.716l14.877,9.82v15.681l-14.877-11.15Z"
+                        transform="translate(-115.919 -86.866)" />
+                    <animateTransform attributeName="transform" attributeType="XML" type="translate" from="50 0"
+                        to="50 50" begin="0" dur="3s" repeatCount="indefinite" />
+                </g>
+
+            </svg>
+
+            <h1 style="text-align: center;">
+                LOADING
+                <span id="span1"> . </span>
+                <span id="span2"> . </span>
+                <span id="span3"> . </span>
+            </h1>
+
+        </section>
+    </div>
+
+    <!-- <div class="container content nodisplay"> -->
+
+    <div class="container content">
+        <h1>
+            <span>d</span>
+            <span>e</span>
+            <span>s</span>
+            <span>i</span>
+            <span>g</span>
+            <span>n</span>
+            <span>k</span>
+            <span>r</span>
+            <span>a</span>
+            <span>f</span>
+            <span>t</span>
+
+        </h1>
+    </div>
+
+    <!-- loading page to blank page effect -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script>
+        let body = document.querySelector("body");
+        let content = document.querySelector(".content");
+        let loading = document.querySelector(".loading");
+        let title = document.querySelector(".content > h1");
+        let titleSpans = document.querySelectorAll(".content > h1 > span")
+        // let title1 = title.childNodes[0].NodeList;
+
+
+        function preloader() {
+            // loading.classList.add("nodisplay");
+            // content.classList.remove("nodisplay");
+            let tl = gsap.timeline();
+            tl.fromTo(loading, {
+                opacity: 0
+            }, {
+                opacity: 1,
+                duration: 2
+            });
+            tl.fromTo(content, {
+                opacity: 0
+            }, {
+                opacity: 1,
+                duration: 2
+            }, "+=1");
+            tl.from(titleSpans, {y: -100, x:50,  opacity: 0, duration: 0.5, stagger: 0.3, ease: "bounce.out"})
+            // tl.from(title, {
+            //     y: 100,
+            //     opacity: 0,
+            //     duration: 0.25,
+            // }, "+=2");
+
+        }
+        preloader();
+        console.log(titleSpans.length);
+    </script>
+
 </body>
+
 </html>
