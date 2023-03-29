@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unity Mobile Banking App</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- <div id="preloader"></div> -->
+        <!-- remove comments and add more css after completing the rest of the project -->
+        <!-- login starts here  -->
+        <section id="login">
+            <img src="images/bankLogo.png" alt="bank logo" id="logo">
+            <section id="login-form-section">
+                <input type="text" name="username" id="username" placeholder="username or Email.....">
+                <input type="password" name="password" id="password" placeholder="password.....">
+                <button id="submit" type="submit">Sign On</button>
+            </section>
+        </section>
+        <!-- login ends here  -------------->
+
+        <!-- welcome content starts here  -------------->
+        <section id="welcome-main-content">
+            <div id="welcome-top-content">
+                <div>
+                    <p>Good Morning,</p>
+                    <p>Matthew</p>
+                    <h4>Customer Since 2012</h4>
+                </div>
+            </div>
+
+            <div id="welcome-middle-content">
+                <div id="checking">
+                    <div>
+                        <h3>Checking...1329</h3>
+                        <p>$2,694.88</p>
+                        <p>Available Balance</p>
+                    </div>
+                </div>
+                <div id="savings">
+                    <div>
+                        <h3>Savings...4722</h3>
+                        <p>$4,699.00</p>
+                        <p>Available Balance</p>
+                    </div>
+                </div>
+                <div id="account">
+                    <a href="#" id="account-button">Open an account</a>
+                </div>
+                <div id="deal">
+                    <p>Your Special Deal Offers
+                        <img id="offer" src="images/exclamation.svg" alt="exclamation">
+                    </p>
+                    <div id="deal-icons">
+                        <img src="images/target.png" alt="target logo">
+                        <img src="images/walmart.png" alt="walmart logo">
+                        <img src="images/starbucks.png" alt="starbucks logo">
+                    </div>
+                </div>
+            </div>
+
+            <div id="welcome-bottom-content">
+                <div>
+                    <div>
+                        <img src="images/test/SVG/accounts.svg" alt="accounts">
+                        <span>acounts</span>
+                    </div>
+                    <div>
+                        <img src="images/test/SVG/deposit.svg" alt="deposit">
+                        <span>deposit</span>
+                    </div>
+                    <div>
+                        <img src="images/test/SVG/payments.svg" alt="payments">
+                        <span>payments</span>
+                    </div>
+                    <div>
+                        <img src="images/test/SVG/menu.svg" alt="menu">
+                        <span>menu</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- welcome content ends here  ---------------------->
+
+
+        <!-- background content starts here  -->
+        <div id="template">
+
+        </div>
+        <section id="wrapper-content">
+            <div id="top-background-gradient"></div>
+            <div id="bottom-white-background"></div>
+            <div id="full-gradient-background"></div>
+        </section>
+    </div>
+
+    <!-- backup if theres no internet -->
+    <!-- important the way it is ordered -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/jquery-3.6.3.min.js"><\/script>')
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
