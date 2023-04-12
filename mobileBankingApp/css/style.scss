@@ -76,12 +76,13 @@ div.container {
         border-radius: $radius2;
         padding: 1em;
         border: none;
-        color: $lightGray;
+        color: black;
         background: $whiteColor;
       }
       input#username:focus,
       input#password:focus {
         background-color: #fcf4ca;
+        // background-color: black;
         border: none;
         outline: 0;
       }
@@ -273,7 +274,154 @@ div.container {
     /////welcome-bottom-content end here
   }
   ////////////////////////welcome ends here
+  ///////checking-main-content start here
+  div#checking-main-content {
+    position: absolute;
+    z-index: 4;
+    width: $min-Width;
+    height: $max-Height;
+    transform: scale($scale);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // background-color: red;
+    div#checking-1 {
+      position: relative;
+      top: 75px;
+      left: 40px;
+      height: 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      color: $whiteColor;
+      h3 {
+        text-transform: uppercase;
+        font-weight: $fW800;
+        letter-spacing: 1px;
+        font-size: 1em;
+      }
+      p:nth-child(2) {
+        font-size: 1.75em;
+        letter-spacing: 2px;
+      }
+      p:nth-child(3) {
+        font-size: 0.75em;
+        letter-spacing: 2px;
+      }
+      img#exclamation {
+        width: 20px;
+        position: relative;
+        top: -1.15em;
+        left: 130px;
+        transform: scale(0.85);
+      }
+      img#left {
+        width: 30px;
+        position: relative;
+        right: 95px;
+        top: -70px;
+        transform: scale(1.25);
+        background: $whiteColor;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: $transition;
+      }
+      img#left:hover {
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+        transform: scale(1.5);
+      }
+    }
+    div#checking-data {
+      background: $whiteColor;
+      width: 275px;
+      height: 420px;
+      position: absolute;
+      top: 154px;
+      border-radius: $radius2;
+      //add css grid 
+      display: grid;
+      //spreading out things evenly
+      grid-template-rows: 10fr 10fr 10fr 10fr 10fr 3fr;
+      div.checking-data-divs {
+        width: 100%;
+        display: flex;
+        border-bottom: 1px solid rgba(193, 193, 193, 0.3);
+        div:nth-child(1) {
+          padding: 1em;
+          img.clock {
+            width: 2em;
+          }
+        }
+        div:nth-child(2) {
+          width: 100%;
+          display: flex; 
+          flex-direction: column;
+          div:nth-child(1) {
+            padding: 0.5em 1em 0em 0em;
+            // width: 100%;
+            display: flex;
+            span {
+              font-size: 0.75em;
+            }
+            span:nth-child(2) {
+              margin-left: auto;
+            }
+          }
+          div:nth-child(2) {
+            margin-top: 0.35em;
+            h3 {
+              font-weight: $fW800;
+              font-size: 0.85em;
 
+            }
+          }
+        }
+      }
+      div.checking-data-divs:nth-child(6) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: red;
+        p#checking-data-divs-p {
+          font-size: 0.5em;
+          font-weight: $fW800;
+        }
+      }
+    }
+    //checking bottom content starts here///////
+    div#checking-bottom-content {
+      position: relative;
+      top: 490px;
+      height: 120px;
+      width: 80%;
+      div {
+          display: flex;
+          justify-content: space-between;
+          div {
+              margin-top: 1em;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              cursor: pointer;
+              img {
+                  width: 50%;
+                  transition: $transition;
+              }
+              span {
+                  font-size: 0.75em;
+                  font-weight: $fW800;
+                  margin-top: 0.5em;
+                  text-transform: capitalize;
+              }
+          }
+          div:hover img {
+              transform: scale(1.20);
+          }
+      }
+  }
+    /////checking-bottom-content end here///////////////////
+  }
+////////////////////checking-main-content ends here///////
   ///////backgrounds start here////////
   div#template {
     width: $max-Width;
@@ -312,12 +460,13 @@ div.container {
     }
     div#full-gradient-background {
       position: absolute;
+      // z-index: 3;
       top: 0;
       height: $max-Height;
       width: 100%;
       border-radius: $radius1;
       background: linear-gradient($gradient3);
-    //   visibility: hidden;
+    //  visibility: hidden;
       //remove after adding javascript
     }
   }
