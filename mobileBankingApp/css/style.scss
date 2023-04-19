@@ -54,9 +54,28 @@ div.container {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    img#logo {
-      width: 200px;
-      height: auto;
+    // img#logo {
+    //   width: 200px;
+    //   height: auto;
+    // }
+    svg#bankLogo {
+      width: 75%;
+      
+      .st1 {
+        fill: #ffffff;
+        stroke: #6d6e71;
+        stroke-width: 4;
+        stroke-miterlimit: 10;
+        
+      }
+
+      // .st2 {
+      //   enable-background: new;
+      // }
+
+      .st3 {
+        fill: #ce0505;
+      }
     }
     section#login-form-section {
       width: 100%;
@@ -145,9 +164,10 @@ div.container {
       position: relative;
       top: 5em;
       width: 80%;
-      div#checking, div#savings {
+      div#checking,
+      div#savings {
         height: 120px;
-        background: $whiteColor ;
+        background: $whiteColor;
         border-radius: $radius2;
         margin-bottom: 1em;
         position: relative;
@@ -159,23 +179,24 @@ div.container {
         box-shadow: $boxShadow;
         cursor: pointer;
         h3 {
-            text-transform: uppercase;
-            font-weight: $fW800;
-            letter-spacing: 2px;
-            font-size: 1em;
-            line-height: 2em;
+          text-transform: uppercase;
+          font-weight: $fW800;
+          letter-spacing: 2px;
+          font-size: 1em;
+          line-height: 2em;
         }
         p:nth-child(2) {
-            font-size: 1.75em;
-            letter-spacing: 2px;
+          font-size: 1.75em;
+          letter-spacing: 2px;
         }
         p:nth-child(3) {
-            font-size: 0.75em;
-            letter-spacing: 2px;
-            line-height: 2em;
+          font-size: 0.75em;
+          letter-spacing: 2px;
+          line-height: 2em;
         }
       }
-      div#checking:hover, div#savings:hover {
+      div#checking:hover,
+      div#savings:hover {
         box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.5);
         transition: $transition;
       }
@@ -190,86 +211,85 @@ div.container {
         pointer-events: auto;
         color: $veryDarkGray;
         a#account-button {
-            padding: 0.75em 1.5em;
-            font-weight: $fW800;
-            font-size: 1.15em;
-            cursor: pointer;
-            border-radius: $radius1;
-            background: linear-gradient($gradient2);
-            text-decoration: none;
-            color: $whiteColor;
-            transition: all 200ms linear;
-        } 
+          padding: 0.75em 1.5em;
+          font-weight: $fW800;
+          font-size: 1.15em;
+          cursor: pointer;
+          border-radius: $radius1;
+          background: linear-gradient($gradient2);
+          text-decoration: none;
+          color: $whiteColor;
+          transition: all 200ms linear;
+        }
         a#account-button:hover {
-            background: linear-gradient($gradient3);
-            box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.5);
+          background: linear-gradient($gradient3);
+          box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.5);
         }
       }
       div#deal {
         position: relative;
         top: -0.25em;
         p {
-            margin: 0.25em 0 0 2em;
-            font-weight: $fW800;
-            img#offer {
-                position: relative;
-                top: 0.2em;
-                width: 1.2em;
-                margin-left: 0.5em;
-                
-            }
+          margin: 0.25em 0 0 2em;
+          font-weight: $fW800;
+          img#offer {
+            position: relative;
+            top: 0.2em;
+            width: 1.2em;
+            margin-left: 0.5em;
+          }
         }
         div#deal-icons {
-            display: flex;
-            justify-content: center;
-            img {
-                width: 28%;
-                cursor: pointer;
-                transition: $transition;
-                // width: 25%;
-                // padding: 3px;
-                // border-radius: 3px;
-                // border-radius: 1px;
-                // revisit change to svg
-            }
-            img:hover {
-               transform: scale(1.10);
-            }
+          display: flex;
+          justify-content: center;
+          img {
+            width: 28%;
+            cursor: pointer;
+            transition: $transition;
+            // width: 25%;
+            // padding: 3px;
+            // border-radius: 3px;
+            // border-radius: 1px;
+            // revisit change to svg
+          }
+          img:hover {
+            transform: scale(1.1);
+          }
         }
       }
     }
     /////welcome-middle-content end here
-    
+
     /////welcome-bottom-content starts here
     div#welcome-bottom-content {
-        position: relative;
-        top: 5.2em;
-        height: 120px;
-        width: 80%;
+      position: relative;
+      top: 5.2em;
+      height: 120px;
+      width: 80%;
+      div {
+        display: flex;
+        justify-content: space-between;
         div {
-            display: flex;
-            justify-content: space-between;
-            div {
-                margin-top: 1em;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                cursor: pointer;
-                img {
-                    width: 50%;
-                    transition: $transition;
-                }
-                span {
-                    font-size: 0.75em;
-                    font-weight: $fW800;
-                    margin-top: 0.5em;
-                    text-transform: capitalize;
-                }
-            }
-            div:hover img {
-                transform: scale(1.20);
-            }
+          margin-top: 1em;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          cursor: pointer;
+          img {
+            width: 50%;
+            transition: $transition;
+          }
+          span {
+            font-size: 0.75em;
+            font-weight: $fW800;
+            margin-top: 0.5em;
+            text-transform: capitalize;
+          }
         }
+        div:hover img {
+          transform: scale(1.2);
+        }
+      }
     }
     /////welcome-bottom-content end here
   }
@@ -338,7 +358,7 @@ div.container {
       position: absolute;
       top: 154px;
       border-radius: $radius2;
-      //add css grid 
+      //add css grid
       display: grid;
       //spreading out things evenly
       grid-template-rows: 10fr 10fr 10fr 10fr 10fr 3fr;
@@ -354,7 +374,7 @@ div.container {
         }
         div:nth-child(2) {
           width: 100%;
-          display: flex; 
+          display: flex;
           flex-direction: column;
           div:nth-child(1) {
             padding: 0.5em 1em 0em 0em;
@@ -372,7 +392,6 @@ div.container {
             h3 {
               font-weight: $fW800;
               font-size: 0.85em;
-
             }
           }
         }
@@ -395,33 +414,33 @@ div.container {
       height: 120px;
       width: 80%;
       div {
+        display: flex;
+        justify-content: space-between;
+        div {
+          margin-top: 1em;
           display: flex;
-          justify-content: space-between;
-          div {
-              margin-top: 1em;
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-              cursor: pointer;
-              img {
-                  width: 50%;
-                  transition: $transition;
-              }
-              span {
-                  font-size: 0.75em;
-                  font-weight: $fW800;
-                  margin-top: 0.5em;
-                  text-transform: capitalize;
-              }
+          flex-direction: column;
+          align-items: center;
+          cursor: pointer;
+          img {
+            width: 50%;
+            transition: $transition;
           }
-          div:hover img {
-              transform: scale(1.20);
+          span {
+            font-size: 0.75em;
+            font-weight: $fW800;
+            margin-top: 0.5em;
+            text-transform: capitalize;
           }
+        }
+        div:hover img {
+          transform: scale(1.2);
+        }
       }
-  }
+    }
     /////checking-bottom-content end here///////////////////
   }
-////////////////////checking-main-content ends here///////
+  ////////////////////checking-main-content ends here///////
   ///////backgrounds start here////////
   div#template {
     width: $max-Width;
@@ -466,7 +485,7 @@ div.container {
       width: 100%;
       border-radius: $radius1;
       background: linear-gradient($gradient3);
-    //  visibility: hidden;
+      //  visibility: hidden;
       //remove after adding javascript
     }
   }
